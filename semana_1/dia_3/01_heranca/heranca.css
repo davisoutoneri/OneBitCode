@@ -1,0 +1,17 @@
+/*
+div {
+  color: blue;
+}
+
+div ul li {
+  color: red;
+}
+*/
+
+div {
+  border: 2px solid;
+}
+
+div ul{
+  border: inherit;
+}

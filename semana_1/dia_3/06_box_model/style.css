@@ -1,0 +1,20 @@
+p {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 50px;
+}
+
+h1 {
+  font-family: 'Geostar', cursive;
+  margin: 45px auto 200px auto;
+  width: 15%;
+
+  border: 2px solid;
+
+  padding: 10px 20px 20px 10px;
+
+  /*
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  */
+}

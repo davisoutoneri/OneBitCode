@@ -1,0 +1,27 @@
+h1{
+  font-size: 50px;
+  color: #f1bd12;
+
+  border-color: #c3eaf6;
+  border-width: 4px;
+  border-style: dashed;
+
+  border: 2px dashed orange;
+}
+
+li{
+  color: #86e1ff;
+  
+}
+
+h4 {
+  color:  #f1bd12;
+}
+
+body {
+  /*background-color: #252599;*/
+  background-image: url("https://cdn.mos.cms.futurecdn.net/BUS6eTtsrr7baicPGunbNW.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

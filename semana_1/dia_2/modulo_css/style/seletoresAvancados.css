@@ -1,0 +1,27 @@
+/*
+* {
+  border: 2px solid;
+}
+*/ 
+
+
+li a{
+  color: green;
+}
+
+
+li > a {
+ color: red;
+}
+
+h1 + h4 {
+  border: 4px dashed;
+}
+
+a[href='./jupiter.html'] {
+  color: orange;
+}
+
+li:nth-of-type(odd) {
+  color: cyan;
+}
