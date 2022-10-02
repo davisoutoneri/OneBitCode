@@ -1,0 +1,52 @@
+body{
+  margin: 0px;
+  background-color: #15667c;
+}
+
+.container-content .div-content h3 {
+  font-family: 'Big Shoulders Inline Display';
+  font-size: 25px;
+  color: #00ddff;
+}
+
+
+.container-content .div-content h1{
+  font-family: 'Nanum Gothic Coding';
+  text-align: center;
+  color: #19ff91;
+}
+
+.container-content .div-content p{
+  font-family: 'Source Code Pro';
+  font-weight: bolder;
+  text-align: left;
+  color: #ffff7f;
+  font-size: 10px;
+
+}
+
+div.container-content{
+  width: 70%;
+  height: 100%;
+
+  margin: 0px auto 0px auto;
+
+  background-color: #1d3334;
+}
+
+div.div-content{
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+div.text-content {
+  width: 90%;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: auto;
+}
+
+hr {
+  background-color: #ffff7f;
+}
