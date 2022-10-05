@@ -10,12 +10,15 @@
   min-height: 100vh;
 
   display: flex;
-  gap: 0px 15px;
+  gap: 10px 30px;
 
   justify-content: center;
   align-items: center;
-
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  /*
+    wrap: manipula a quebra do elemento
+    wrap-reverse: quebra os itens e inverte a ordem deles
+  */
 }
 
 .item{
