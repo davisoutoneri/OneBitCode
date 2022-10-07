@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  background-color: darkgray;
+}
+
+.items{
+  background-color: white;
+  border: 2px solid black;
+}
+
+.text{
+  font-size: 30px;
+}
