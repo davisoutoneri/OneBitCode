@@ -24,17 +24,36 @@
 
 .header .buttons button{
   background-color: transparent;
+  border: none;
   color: white;
   padding: 10px;
-  border: none;
-  transition: 5s;
-
+  transition: 3s;
+}
+/*----Animation--------*/
+.hover-animation{
+  display: inline-block;
+  position: relative;
+  color: black
 }
 
-.header .buttons button:hover{
-  text-decoration: underline;
-  border-color: black;
+.hover-animation:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
+
+.hover-animation:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*--------------------*/
 
 .onebitcode-img{
   width: 200px;
@@ -43,20 +62,24 @@
 
 .footer a{
   color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /*_________________________________SECTION CONTENT______________________________________*/
 .content{
   flex: 1 0 auto;
+  padding: 10px;
   
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4,1fr);
+  gap: 10px;
+  grid-template-columns: repeat(2,1fr);
   grid-template-areas: 
     "content1 content1 content1"
     "content2 content2 content3"
+    /*
     "content2 content2 content3"
-    "content2 content2 content3"
+    "content2 content2 content3"*/
   ;
 }
 
@@ -65,37 +88,123 @@
   grid-area: content1;
   height: 70px;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .top-titles .main-title{
-
+  padding-left: 120px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .top-titles .text{
+  font-size: 20px;
 
 }
 /*-----------------------------*/
 /*------------------------MAIN-CONTENT------------------------*/
 .main-content{
   grid-area: content2;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 50px;
 }
 
 .main-content .item-sport{
+  background-color: transparent;
+  border: 0;
 
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.main-content .item-sport:hover{
+  border: 2px solid black;
+  border-radius: 15px;
 }
 
 .main-content .item-sport .sport-image {
-
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
 }
 .main-content .item-sport .content-title {
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 .main-content .item-sport .content-text {
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 /*------------------------LATERAL-CONTENT------------------------*/
 .lateral-content{
   grid-area: content3;
+  background-color: rgb(58, 58, 58);
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.lateral-content .lateral-main-title{
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.lateral-content .lateral-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 5px;
+
+  transition: 0.3s;
+}
+
+.lateral-content .lateral-item:hover{
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.lateral-content .lateral-item .image-link{
+  background-color: transparent;
+  border: 0;
+}
+
+.lateral-content .lateral-item .image-link .extra-category-image{
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.lateral-content .lateral-item .image-link .lateral-title{
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /*---------------------------------------------------------------*/
