@@ -77,9 +77,6 @@
   grid-template-areas: 
     "content1 content1 content1"
     "content2 content2 content3"
-    /*
-    "content2 content2 content3"
-    "content2 content2 content3"*/
   ;
 }
 
@@ -208,3 +205,24 @@
 }
 
 /*---------------------------------------------------------------*/
+/*_______________________________MEDIA QUERIES___________________________*/
+@media(max-width: 1394px) {
+  
+  .content{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+      "content1 content1 content1"
+      "content2 content2 content3"
+    ;
+  }
+
+  .main-content{
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .lateral-content{
+    width: 300px;
+    margin-left: 100px;
+  }
+}
