@@ -60,6 +60,10 @@
   height: auto;
 }
 
+.obc-img-div{
+
+}
+
 .footer a{
   color: white;
   font-size: 20px;
@@ -87,17 +91,16 @@
   width: 100%;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .top-titles .main-title{
-  padding-left: 120px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .top-titles .text{
   font-size: 20px;
-
 }
 /*-----------------------------*/
 /*------------------------MAIN-CONTENT------------------------*/
@@ -207,22 +210,121 @@
 /*---------------------------------------------------------------*/
 /*_______________________________MEDIA QUERIES___________________________*/
 @media(max-width: 1394px) {
-  
+  .main-content{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .lateral-content .lateral-item .image-link .extra-category-image{
+    width: 250px;
+  }
+}
+
+@media(max-width: 1086px) {
+  .main-content{
+    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media(max-width: 774px) {
   .content{
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     grid-template-areas: 
-      "content1 content1 content1"
-      "content2 content2 content3"
+      "content1"
+      "content2"
+      "content3"
     ;
   }
 
   .main-content{
-    width: 200px;
-    margin-left: 0;
+    margin: 10px;
+    margin-left: 5px;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .lateral-content{
-    width: 300px;
-    margin-left: 100px;
+    width: 100%;
   }
+
+  .lateral-content .lateral-item .image-link .extra-category-image{
+    width: 500px;
+  }
+
+  .top-titles .text{
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 640px) {
+  .main-content{
+    display: flex;
+  }
+
+  .top-titles .main-title{
+    font-size: 25px;
+  } 
+  .top-titles .text{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 544px) {
+
+  .onebitcode-img{
+    width: 350px;
+    height: auto;
+  }
+
+  .header .buttons button{
+    font-size: 25px;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "content"
+      "footer"
+    ;
+  }
+
+  .header{
+    grid-area: header;
+  }
+  .content{
+    grid-area: content;
+  }
+  .footer{
+    grid-area: footer;
+  }
+
+  .header , .footer{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content .item-sport{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content .item-sport .sport-image {
+    width: 400px;
+    height: 300px;
+  }
+
+  .lateral-content{
+    width: 520px;
+  }
+
 }
