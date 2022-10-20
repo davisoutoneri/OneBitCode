@@ -1,0 +1,32 @@
+@mixin btn-format($width, $padding, $border-radius, $display, $margin-top) {
+  width: $width;
+  padding: $padding;
+  border-radius: $border-radius;
+  display: $display;
+  margin-top: $margin-top;
+}
+
+.btn{
+  @include btn-format(125px, 10px 0px, 20px, block, 10px);
+
+  &.btn-roxo{
+    background-color: purple;
+    color: white;
+  }
+
+  &.btn-amarelo{
+    background-color: yellow;
+    color: black;
+  }
+
+  &.btn-azul{
+    background-color: blue;
+    color: white;
+  }
+}
+
+.btn-verde{
+  @extend .btn;
+  background-color: green;
+  color: white;
+}

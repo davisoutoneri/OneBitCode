@@ -1,0 +1,26 @@
+.btn, .btn-verde {
+  width: 125px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.btn.btn-roxo, .btn-roxo.btn-verde {
+  background-color: purple;
+  color: white;
+}
+.btn.btn-amarelo, .btn-amarelo.btn-verde {
+  background-color: yellow;
+  color: black;
+}
+.btn.btn-azul, .btn-azul.btn-verde {
+  background-color: blue;
+  color: white;
+}
+
+.btn-verde {
+  background-color: green;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
