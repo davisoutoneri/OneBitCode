@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- CSS IN PAGE -->
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        color: wheat;
+      }
+    </style>
+    <title>Navbar</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">OBC BOOTSTRAP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar w/ text</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Aproveite 10% de desconto na 1º compra
+                </span>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="container mt-5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, eveniet delectus. Quas quisquam dolore molestias saepe. Non dolore, nam suscipit optio consectetur iusto maiores sed distinctio voluptatum aliquid, omnis sint hic ducimus modi, earum ut quidem quibusdam. Harum quam voluptatem odit pariatur. Nihil ut sed maiores reprehenderit ipsa enim porro, perspiciatis voluptatem, ducimus quasi qui ad illum! Perferendis ducimus veniam, labore laboriosam tempore nam qui modi magnam iste ea ex vitae in quae doloremque. Veritatis rem tempora doloribus quisquam, fugiat praesentium ad molestias, repudiandae numquam blanditiis eaque. Quam corrupti, ducimus voluptatum fugiat a dignissimos, commodi nulla hic esse explicabo deserunt! Blanditiis soluta porro sed quaerat, cupiditate cumque asperiores in modi non saepe! Laboriosam incidunt nostrum ullam delectus esse magni sequi numquam possimus natus autem molestias hic facere perspiciatis, odio quia, sapiente sit commodi sint saepe reprehenderit harum odit, ipsum exercitationem. Saepe excepturi nam nihil omnis provident est recusandae quos accusamus iure, maiores, reiciendis velit sunt quisquam debitis quam quae, autem commodi illo! Officia eveniet amet exercitationem quis facilis a est doloremque temporibus nulla. Nisi voluptates quidem ipsa, rem voluptatibus vero quibusdam labore autem iusto, quam ab similique tempora soluta odit veniam. Animi nulla, praesentium libero at fuga odit enim dolor!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum accusamus, laboriosam aut, quis minima dignissimos assumenda sunt provident vel rem dicta voluptate enim, aperiam maxime. Fugiat hic distinctio consectetur ratione eaque, iusto nesciunt quam odio quo. Voluptatem ex nulla quam numquam earum quisquam ipsa quibusdam vero, animi illo atque reiciendis vel tenetur laboriosam assumenda iure neque quia illum voluptates facere voluptate sit repellat architecto aliquid. Voluptas deleniti nihil quae eius tempora ab? Alias quaerat rem, explicabo quis laboriosam vitae totam id iste nihil sunt fugit reprehenderit voluptatem repudiandae est assumenda, molestias magnam ipsam aspernatur officiis enim. Quo, explicabo reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere soluta quaerat fugit doloremque. Tempora illum numquam dolorum. Neque, quam deserunt, quo inventore ducimus fugiat tempora, voluptas quod doloribus odit pariatur iusto repudiandae officia eum? Molestiae, eligendi. Beatae, dolorem vitae velit excepturi aperiam nisi. Adipisci veniam dignissimos, magnam consequatur voluptatibus aliquid rerum soluta nemo enim animi impedit expedita totam assumenda illo velit ut voluptatem, autem excepturi, necessitatibus consectetur! Sed magni assumenda esse magnam, incidunt dolore iusto eligendi laudantium numquam debitis possimus illo, sit repudiandae vel aspernatur! Saepe, reiciendis quasi? Eaque dolorem, voluptates totam at quo reiciendis nihil ab et dicta exercitationem magni possimus? Natus quasi quidem, dolor ullam illo corrupti vero perferendis, nobis possimus iusto obcaecati? Ex quis dolore cum blanditiis sed beatae earum, repellat facere! Non deleniti repudiandae numquam sequi ea atque, repellat officia voluptatibus. Quisquam aut iure quaerat, nulla sapiente minus laborum distinctio, tenetur, quo quidem dolore quasi molestias?</p>
+      </div>
+    </div>
+    
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>
