@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LIB Animation Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Style In Page -->
+    <style>
+      body{
+        background-color: darkslateblue;
+        font-size: 50px;
+        color: white;
+      }
+      .container{
+        min-height: 100vh;
+      }
+    </style>
+    <title>Animation LIB</title>
+  </head>
+  <body>
+    
+    <div data-aos="fade-up" class="container">
+      <p>Hello, World!</p>
+    </div>
+
+    <div data-aos="fade-down" data-aos-duration="3000" class="container">
+      <p>WORLD, HELLO!</p>
+    </div>
+
+    <div data-aos="fade-left" data-aos-easing="linear"
+    data-aos-duration="1500" class="container">
+      <p>LEFT WORLD, HELLO!</p>
+    </div>
+
+    <div data-aos="fade-right" class="container">
+      <p>Right WORLD, HELLO!</p>
+    </div>
+
+    <div data-aos="flip-right" class="container">
+      <p>FLIP WORLD, HELLO!</p>
+    </div>
+
+    <div data-aos="flip-left" class="container">
+      <p>FLIP LEFT WORLD, HELLO!</p>
+    </div>
+
+    <!-- LIB Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
