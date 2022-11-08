@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Offcanvas</title>
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+      <!-- PADRÃO -->
+      <a class="btn btn-warning" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Offcanva Padrão
+      </a>             
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Testando Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div>
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis officiis harum quaerat accusantium ea vitae atque dolor facere itaque officia! At reprehenderit non voluptatem consequuntur sed cupiditate, quas adipisci asperiores. Voluptates recusandae iste consectetur voluptatum mollitia quam assumenda accusantium praesentium porro enim dolorem quas quod, eligendi neque, dolor doloribus natus illum odit iure aut nihil magnam ratione debitis corrupti. Numquam adipisci veniam facilis delectus ipsum aliquid incidunt soluta temporibus quisquam tenetur maxime dolorum beatae iure alias eos nisi, voluptatem debitis id illum itaque modi perferendis nam? Temporibus quisquam rerum itaque soluta sunt iure omnis nulla autem? Eaque laborum magnam quod.
+                </p>
+              </div>
+              <div class="dropdown mt-3">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Clique para ver mais!
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+        
+    </div>
+
+    <div class="container text-center mt-5">
+      <!-- DE CIMA -->
+      <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button" aria-controls="offcanvasExample">Offcanva Surpresa</a> 
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Title Surprise</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora impedit quo esse! Quaerat ipsam ducimus quod deserunt laudantium sed qui.
+            </p>
+            <div class="dropdown mt-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Clique para ver mais!
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-3">
+      <!-- DE CIMA -->
+      <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasTop2" role="button" aria-controls="offcanvasExample">Offcanva Top 2</a> 
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Title Surprise 2</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum fugiat qui molestias soluta autem.
+            </p>
+          </div>
+      </div>
+    </div>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
