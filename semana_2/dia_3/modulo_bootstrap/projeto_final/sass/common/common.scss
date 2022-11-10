@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navLogoPC{
+  width: 250px;
+}
+
+.navbarPC{
+  display: block;
+  visibility: visible;
+}
+
+.mediaQueryNavbar{
+  display: none;
+  visibility: hidden;
+}
+
+.container00{
+  min-height: 100vh;
+  header{
+    a{
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+.arrowDown{
+  width: 90px;
+}
+
+.btnLearnMore-Explore{
+  font-size: 15px;
+}
+
+
+.footter{
+  font-size: 13px;
+
+  .copyright{
+    color: $color-copyright-obc-footer;
+  }
+
+  a{
+    color: white;
+    &:hover{
+      color: $color-hover-links;
+    }
+    &:link{
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media (max-width: 990px){
+  .navbarPC{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .mediaQueryNavbar{
+    display: block;
+    visibility: visible;
+  }
+}
