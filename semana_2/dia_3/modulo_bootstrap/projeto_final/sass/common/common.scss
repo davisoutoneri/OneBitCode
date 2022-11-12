@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body{
   background-color: black;
@@ -26,12 +22,19 @@ body{
 
 .container00{
   min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   header{
     a{
       font-size: 12px;
       font-weight: 700;
     }
   }
+}
+
+.titlePadding{
+  padding-top: 200px;
 }
 
 .arrowDown{

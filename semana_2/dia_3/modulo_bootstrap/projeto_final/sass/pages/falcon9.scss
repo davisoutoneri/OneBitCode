@@ -1,0 +1,83 @@
+.fontFalconTitle{
+  font-weight: 514;
+}
+
+.container05{
+  background: url('../assets/images/falcon9/01.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.container06{
+  background: url('../assets/images/falcon9/02.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.carouselContent{
+  padding-top: 300px;
+}
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+.carouselImage1{
+  background-image: url('../assets/images/falcon9/03.jpg');
+}
+.carouselImage2{
+  background-image: url('../assets/images/falcon9/04.jpg');
+}
+.carouselImage3{
+  background-image: url('../assets/images/falcon9/05.jpg');
+}
+.carouselImage4{
+  background-image: url('../assets/images/falcon9/06.jpg');
+}
+.carouselImage5{
+  background-image: url('../assets/images/falcon9/07.jpg');
+}
+
+.carousel1{
+  width: 600px;
+  color:  $color-item-table;
+
+  .tdData{
+    padding-left: 100px;
+  }
+}
+.carousel2{
+  width: 500px;
+}
+.carousel3{
+  width: 500px;
+  color: $color-item-table;
+}
+.carousel4{
+  width: 500px;
+}
+.carousel5{
+  width: 500px;
+  color: $color-item-table;
+}
+
+.containerFalcon9Description{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.falcon9Description{
+    font-size: 22px;
+    width: 640px;
+    line-height: 50px;
+}
+
+@media (max-width: 768px){
+  .falcon9Description{
+    
+    width: 340px;
+    
+}
+}
