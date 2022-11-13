@@ -12,6 +12,11 @@
   background-size: cover;
 }
 
+.container07{
+  background: url('../assets/images/falcon9/08.jpg') center no-repeat;
+  background-size: cover;
+}
+
 .carouselContent{
   padding-top: 300px;
 }
@@ -20,6 +25,10 @@
   width: 500px;
   margin-left: 13%;
   padding-top: 15%;
+
+  table{
+    color: $color-item-table;
+  }
 }
 
 .carouselImage1{
@@ -36,6 +45,25 @@
 }
 .carouselImage5{
   background-image: url('../assets/images/falcon9/07.jpg');
+}
+
+.carouselImage6{
+  background-image: url('../assets/images/falcon9/09.jpg');
+}
+.carouselImage7{
+  background-image: url('../assets/images/falcon9/10.jpg');
+}
+.carouselImage8{
+  background-image: url('../assets/images/falcon9/11.jpg');
+}
+.carouselImage9{
+  background-image: url('../assets/images/falcon9/12.jpg');
+}
+.carouselImage10{
+  background-image: url('../assets/images/falcon9/13.jpg');
+}
+.carouselImage11{
+  background-image: url('../assets/images/falcon9/14.jpg');
 }
 
 .carousel1{
@@ -61,6 +89,18 @@
   color: $color-item-table;
 }
 
+.carouselWithButton{
+  background-color: black;
+
+  position: absolute;
+  bottom: 7%;
+
+  p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .containerFalcon9Description{
   height: 90vh;
   display: flex;
@@ -74,10 +114,27 @@
     line-height: 50px;
 }
 
+@media (max-width: 702px){
+  .carouselWithButton{
+    
+  }
+}
 @media (max-width: 768px){
   .falcon9Description{
-    
-    width: 340px;
-    
+    width: 340px;  
+  }
 }
+@media (max-width: 1024px){
+  #overViewPosition{
+    width: 300px;
+  }
+}
+@media (max-width: 386){
+  #overViewPosition{
+    width: 250px;
+    margin-left: 10%;
+  }
+  .falcon9Description{
+    width: 320px;
+  }
 }

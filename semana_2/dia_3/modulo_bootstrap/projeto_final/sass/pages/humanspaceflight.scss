@@ -1,0 +1,84 @@
+.container08{
+  background: url('../assets/images/humanFlight/01.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.container09{
+  background: url('../assets/images/humanFlight/02.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.container10{
+  background: url('../assets/images/humanFlight/03.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.container11{
+  background: url('../assets/images/humanFlight/04.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.container12{
+  background: url('../assets/images/humanFlight/05.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.titleHuman{
+  padding-top: 20%;
+  font-size: 120px;
+  font-weight: 500;
+}
+.subtitleHuman{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.spaceXText{
+  padding-top: 3.2%;
+  height: 200px;
+  font-size: 20px;
+}
+
+.obcLinkText{
+
+  color: white;
+  font-weight: 500;
+  &:link{
+    text-decoration: none;
+  }
+}
+
+.rightPosition{
+  padding-top: 20%;
+  padding-left: 40%;
+  h1{
+    font-size: 60px;
+    font-weight: 500;
+  }
+  a{
+    font-weight: 100;
+  }
+}
+
+.leftPosition{
+  padding-top: 20%;
+  padding-left: 0%;
+  h1{
+    font-size: 60px;
+    font-weight: 500;
+  }
+  a{
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 790){
+  .titleHuman{
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px){
+  .titleHuman{
+    font-size: 30px;
+  }
+}

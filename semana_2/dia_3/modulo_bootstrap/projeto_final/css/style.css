@@ -20,6 +20,7 @@ body {
 
 .container00 {
   min-height: 100vh;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,6 +40,24 @@ body {
 
 .btnLearnMore-Explore {
   font-size: 15px;
+}
+
+.contactDiv {
+  height: 80vh;
+  padding-top: 15%;
+  font-size: 17px;
+}
+.contactDiv a {
+  font-size: 20px;
+}
+.contactDiv .obcLink {
+  color: #b9b9b9;
+}
+.contactDiv .obcLink:hover {
+  color: white;
+}
+.contactDiv .obcLink:link {
+  text-decoration: none;
 }
 
 .footter {
@@ -101,6 +120,11 @@ body {
   background-size: cover;
 }
 
+.container07 {
+  background: url("../assets/images/falcon9/08.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .carouselContent {
   padding-top: 300px;
 }
@@ -109,6 +133,9 @@ body {
   width: 500px;
   margin-left: 13%;
   padding-top: 15%;
+}
+#overViewPosition table {
+  color: #d8d8d8;
 }
 
 .carouselImage1 {
@@ -129,6 +156,30 @@ body {
 
 .carouselImage5 {
   background-image: url("../assets/images/falcon9/07.jpg");
+}
+
+.carouselImage6 {
+  background-image: url("../assets/images/falcon9/09.jpg");
+}
+
+.carouselImage7 {
+  background-image: url("../assets/images/falcon9/10.jpg");
+}
+
+.carouselImage8 {
+  background-image: url("../assets/images/falcon9/11.jpg");
+}
+
+.carouselImage9 {
+  background-image: url("../assets/images/falcon9/12.jpg");
+}
+
+.carouselImage10 {
+  background-image: url("../assets/images/falcon9/13.jpg");
+}
+
+.carouselImage11 {
+  background-image: url("../assets/images/falcon9/14.jpg");
 }
 
 .carousel1 {
@@ -157,6 +208,16 @@ body {
   color: #d8d8d8;
 }
 
+.carouselWithButton {
+  background-color: black;
+  position: absolute;
+  bottom: 7%;
+}
+.carouselWithButton p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .containerFalcon9Description {
   height: 90vh;
   display: flex;
@@ -173,6 +234,104 @@ body {
 @media (max-width: 768px) {
   .falcon9Description {
     width: 340px;
+  }
+}
+@media (max-width: 1024px) {
+  #overViewPosition {
+    width: 300px;
+  }
+}
+@media (max-width: 386) {
+  #overViewPosition {
+    width: 250px;
+    margin-left: 10%;
+  }
+  .falcon9Description {
+    width: 320px;
+  }
+}
+.container08 {
+  background: url("../assets/images/humanFlight/01.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.container09 {
+  background: url("../assets/images/humanFlight/02.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.container10 {
+  background: url("../assets/images/humanFlight/03.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.container11 {
+  background: url("../assets/images/humanFlight/04.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.container12 {
+  background: url("../assets/images/humanFlight/05.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.titleHuman {
+  padding-top: 20%;
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.subtitleHuman {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.spaceXText {
+  padding-top: 3.2%;
+  height: 200px;
+  font-size: 20px;
+}
+
+.obcLinkText {
+  color: white;
+  font-weight: 500;
+}
+.obcLinkText:link {
+  text-decoration: none;
+}
+
+.rightPosition {
+  padding-top: 20%;
+  padding-left: 40%;
+}
+.rightPosition h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.rightPosition a {
+  font-weight: 100;
+}
+
+.leftPosition {
+  padding-top: 20%;
+  padding-left: 0%;
+}
+.leftPosition h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.leftPosition a {
+  font-weight: 100;
+}
+
+@media (max-width: 790) {
+  .titleHuman {
+    font-size: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .titleHuman {
+    font-size: 30px;
   }
 }
 
