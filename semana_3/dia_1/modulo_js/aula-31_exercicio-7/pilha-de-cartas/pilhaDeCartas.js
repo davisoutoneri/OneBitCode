@@ -18,9 +18,8 @@ do{
     "2 - Puxar uma carta\n" +
     "3 - Sair\n" +
     "______________________________\n" +
-    "BARALHO:\n" +
-    baralhoString +
-    "\n______________________________"
+    "CARTAS NO BARALHO: "+ baralho.length + "\n" +
+    "______________________________"
   ))
 
   switch(menu){
@@ -28,10 +27,15 @@ do{
       baralho.unshift(prompt("Qual o nome da carta que você adicionará ao topo do baralho?"))
       break
     case 2:
-      let cartaPuxada = baralho.shift()
-      alert("Você retirou a carta "+ cartaPuxada + " do topo do baralho!")
+      if(baralho.length > 0){
+        let cartaPuxada = baralho.shift()
+        alert("Você retirou a carta "+ cartaPuxada + " do topo do baralho!")
+      }else{
+        alert("Não há cartas para serem retiradas!")
+      }
       break
     case 3:
+      alert("Saindo do sistema...")
       break
     default:
       alert("Opção inválida!")

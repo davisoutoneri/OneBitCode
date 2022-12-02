@@ -37,6 +37,7 @@ do{
       }
       break
     case 3: 
+      alert("Saindo do sistema...")
       break
     default:
       alert("Opção inválida!")
